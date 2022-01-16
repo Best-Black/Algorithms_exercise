@@ -17,14 +17,18 @@ public class exercise3 {
                 b++;
             }
         }
+        System.out.println("原来数组");
+        funcs.printArray2d(a);
 
         //转置
-        for(int i = 0; i<10; i++){
-            for(int j=0; j<9; j++){
-                a[i][j] = b+1;
-                b++;
+        int [][] c = new int[9][10];
+        for(int i = 0; i<9; i++){
+            for(int j=0; j<10; j++){
+                c[i][j] = a[j][i];
             }
         }
+        System.out.println("转置数组");
+        funcs.printArray2d(c);
 
     }
 }
