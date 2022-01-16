@@ -6,5 +6,12 @@
 package chapter1;
 
 public class exercise1 {
-
+    public static void main(String[] args){
+        int N = 100;
+        String s = "";
+        for(int n = N; n > 0; n /= 2){
+            s = (n % 2) + s;
+        }
+        System.out.println(s);
+    }
 }
