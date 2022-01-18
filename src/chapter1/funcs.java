@@ -43,6 +43,14 @@ public class funcs {
     }
 
     /**
+     * 检测输入是否为空
+     * @return
+     */
+    public boolean isEmpty(){
+
+    }
+
+    /**
      * 测试函数
      * @param args
      */
