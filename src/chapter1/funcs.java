@@ -4,6 +4,7 @@
 
 package chapter1;
 import java.util.Random;
+import java.util.Scanner;
 
 public class funcs {
 
@@ -47,7 +48,9 @@ public class funcs {
      * @return
      */
     public boolean isEmpty(){
-
+        Scanner in = new Scanner(System.in);
+        if(in.hasNext()) return true;
+        else return false;
     }
 
     /**
