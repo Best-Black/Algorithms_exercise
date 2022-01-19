@@ -14,6 +14,8 @@ public class FixCapacityStack<Item> {
 
     public boolean isEmpty(){  return N==0;  }
 
+    public boolean isFull(){  return N==a.length; }
+
     public int size(){ return N; }
 
     public void push(Item item){
@@ -23,6 +25,8 @@ public class FixCapacityStack<Item> {
     public Item pop(){
         return a[--N];
     }
+
+    public Item peek() { return a[N-1]; }
 
     public static void main(String[] args) {
         FixCapacityStack<String> s;
